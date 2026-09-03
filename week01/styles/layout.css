@@ -77,3 +77,20 @@ nav {
 main, aside, footer, .nav a, p {
     font-size: large;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    header,
+    main,
+    aside,
+    footer {
+        grid-column: 1 / 2;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+}
