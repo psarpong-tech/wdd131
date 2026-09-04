@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-background-color: rgb(20 78 129);
+    --secondary-background-color: rgb(45 45 45);
+    --accent1-color: rgb(245 170 191);
+    --accent2-color: #ffffff;
+    --text-color: #222;
+    --padding: 1rem;
+    --text-align: center;
+    --box-shadow: 0 0 9px rgba(0 0 0 0.16);
+    --border1: 1px solid #aaa;
+    --border2: 1px solid #333;
+    --width: 130px;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: "Ubuntu", sans-serif;
+    background-color: var(--heading-background-color);
+    color: var(--accent2-color);
+    text-align: var(--text-align);
+    margin: 0;
+    padding: var(--padding);
+    border: none;
+}
+
+header h1 span {
+    display: block;
+}
+
+/* Navigation */
+
+nav {
+    background-color: var(--secondary-background-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: var(--text-align);
+}
+
+nav a {
+    color: var(--accent2-color);
+    display: block;
+    padding: .7rem 1.5rem;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+nav a:hover {
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+}
+
+/* Main layout */
+
+.grid {
+    max-width: 960px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+main {
+    grid-column: 1 / 2;
+    padding: 0 .5rem;
+}
+
+
+main > h1 {
+    color: var(--heading-background-color);
+    font-family: "Ubuntu", sans-serif;
+    margin: 15px 0;
+    text-align: var(--text-align);
+
+}
+
+/* Cards */
+
+.card {
+    border: var(--border1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: var(--padding);
+    box-shadow: var(--box-shadow);
+}
+
+.card > h2 { font-size: var(--padding);
+    background-color: var(--heading-background-color);
+    color: var(--accent2-color);
+    text-align: var(--text-align);
+    padding: .5rem;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Intro Card */
+
+.intro-content {
+    padding: var(--padding);
+}
+
+.intro-content img {
+    float: right;
+    width: 120px;
+    height: auto;
+    border: var(--border1);
+    padding: 2px;
+    box-shadow: var(--box-shadow);
+    margin: 0 0 1rem 1rem;
+}
+
+.intro-content p {
+    margin: 0;
+}
+
+
+/* Country Card */
+
+
+.my-country {
+    padding: 0 1rem 1rem;
+}
+
+.my-country h3 {
+    background-color: ;
+    color: var(--text-color);
+    text-align: var(--text-align);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 0.3rem;
+    margin: 1rem auto;
+    border-bottom: var(--border1);
+    width: 60%;
+}
+
+.country-content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.flag {
+    text-align: var(--text-align);
+    flex-shrink: 0;
+}
+
+.flag img {
+    width: 140px;
+    height: auto;
+    border: var(--border1);
+    padding: 2px;
+    box-shadow: var(--box-shadow);
+}
+
+.flag figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #555555;
+    margin-top: 0.25rem;
+}
+.country-content img {
+    float: left;
+    width: 150px;
+    height: auto;
+    border: var(--border1);
+    padding: 2px;
+    box-shadow: var(--box-shadow);
+    margin: 0 1rem 1rem 0;
+}
+
+.country-content p {
+    margin: 0;
+}
+
+/* Aside */
+
+aside {
+    grid-column: 2 / 3;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    overflow: hidden;
+    border: var(--border2);
+    margin-top: 78px;
+}
+
+aside h2 {
+    color: var(--accent2-color);
+    padding: .5rem;
+    background-color: var(--heading-background-color);
+    font-family: "Ubuntu", sans-serif;
+    font-size: var(--padding);
+    text-align: var(--text-align);
+}
+
+aside ul {
+    padding: 2rem;
+}
+
+aside li {
+    margin-bottom: .5rem;
+}
+
+aside a {
+    color: #0000ee;
+}
+
+aside a:hover {
+    color: var(--heading-background-color);
+}
+
+/* Footer */
+
+footer {
+    margin: 0 auto;
+    max-width: 980px;
+    text-align: var(--text-align);
+    background-color: var(--heading-background-color);
+    color: var(--accent2-color);
+    padding: var(--padding);
+}
+
+
+footer p {
+    margin: 0.25rem;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 0.85rem;
+}
+
+/* Responsive design */
+
+@media (max-width: 700px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro-content,
+    .country-content {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-content img, .country-content img {
+        justify-self: center;
+    }
+}
