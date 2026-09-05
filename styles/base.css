@@ -12,7 +12,7 @@
     --text-color: #222;
     --padding: 1rem;
     --text-align: center;
-    --box-shadow: 0 0 9px rgba(0 0 0 0.16);
+    --box-shadow: 0 0 9px rgba(0, 0, 0, 0.16);
     --border1: 1px solid #aaa;
     --border2: 1px solid #333;
     --width: 130px;
@@ -31,7 +31,7 @@ header {
     margin: 0 auto;
 }
 
-header h1 {
+header h1, .head-title {
     font-family: "Ubuntu", sans-serif;
     background-color: var(--heading-background-color);
     color: var(--accent2-color);
@@ -41,7 +41,11 @@ header h1 {
     border: none;
 }
 
-header h1 span {
+.head-title {
+    font-size: large;
+}
+
+header .head-title span {
     display: block;
 }
 
@@ -74,7 +78,7 @@ nav a:hover {
     margin: 1rem auto;
     display: grid;
     grid-template-columns:2fr 1fr;
-    gap: 1.5rem;
+    gap: .3rem;
     align-items: stretch;
 }
 
@@ -94,11 +98,10 @@ main > h1 {
 
 /* Cards */
 
-.card {
+.card-container {
     border: var(--border1);
     border-radius: 8px;
     overflow: hidden;
-    margin-bottom: var(--padding);
     box-shadow: var(--box-shadow);
 }
 
@@ -139,7 +142,6 @@ main > h1 {
 }
 
 .my-country h3 {
-    background-color: ;
     color: var(--text-color);
     text-align: var(--text-align);
     font-family: "Ubuntu", sans-serif;
@@ -193,11 +195,10 @@ main > h1 {
 
 aside {
     grid-column: 2 / 3;
-    box-shadow: var(--box-shadow);
     border-radius: 8px;
     overflow: hidden;
     border: var(--border2);
-    margin-top: 78px;
+    margin-top: 79px;
 }
 
 aside h2 {
