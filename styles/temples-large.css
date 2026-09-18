@@ -1,0 +1,53 @@
+@media screen and (min-width: 720px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    .header-content {
+        padding: 1rem 0;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 1rem;
+    }
+
+    main {
+        max-width: 1000px;
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 1rem;
+    }
+
+    figure img{
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 3rem;
+    }
+}
