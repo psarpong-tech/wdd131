@@ -93,8 +93,7 @@ main > h1 {
     font-family: "Ubuntu", sans-serif;
     margin: 15px 0;
     text-align: var(--text-align);
-
-}
+} 
 
 /* Cards */
 
@@ -197,7 +196,7 @@ aside {
     grid-column: 2 / 3;
     border-radius: 8px;
     overflow: hidden;
-    border: var(--border2);
+    border: var(--border1);
     margin-top: 79px;
 }
 

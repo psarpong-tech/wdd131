@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #0a3161;
+  --secondary-color: #b31942;
+  --accent-color: #12529c;
+  --text-color: #222;
+  --card-bg: rgba(255, 255, 255, 0.92);
+  --font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: white;
+  line-height: 1.5;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  border-bottom: 8px solid var(--accent-color);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* MAIN */
+
+main {
+  width: 100%;
+  padding: 0;
+}
+
+/* HERO */
+
+.hero {
+  width: 100%;
+}
+
+/* Mobile hero image */
+.hero picture {
+  display: block;
+  width: 100%;
+}
+
+.hero picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* CARDS */
+
+.container {
+  background-color: white;
+  padding: 0.8rem 1rem;
+  margin: 0;
+}
+
+.container h2 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* DATA / WEATHER LIST */
+
+.info-list {
+  list-style: none;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.info-list li {
+  display: flex;
+  justify-content: center;
+  padding: 0.15rem 0;
+  font-size: 0.85rem;
+}
+
+.label {
+  font-weight: bold;
+  width: 50%;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+.value {
+  width: 50%;
+  text-align: left;
+}
+
+/* WEATHER ICON */
+
+.mobile-weather-icon {
+  display: block;
+  width: 65px;
+  height: auto;
+  margin: 0 auto 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+footer p {
+  margin: 0.2rem 0;
+}
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United States of America</title>
+
+    <meta name="description" content="Country page featuring information and weather for the USA.">
+    <meta name="author" content="Priscilla Gyasiwaa Sarpong">
+
+     
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>United States of America</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source
+                    media="(min-width: 750px)"
+                    srcset="images/hero-large.webp">
+
+                <source
+                    media="(max-width: 749px)"
+                    srcset="images/hero-small.webp">
+
+                <img
+                    src="images/hero-small.webp"
+                    alt="United States Landscape"
+                    width="980"
+                    height="500">
+            </picture>
+
+        
+            <section class="container data-card">
+                <h2>Data</h2>
+                <ul class="info-list">
+                    <li><span class="label">Area:</span> <span class="value">9,833,520 sq km</span></li>
+                    <li><span class="label">Population:</span> <span class="value">335,000,000</span></li>
+                    <li><span class="label">Capital:</span> <span class="value">Washington, D.C.</span></li>
+                    <li><span class="label">Languages:</span> <span class="value">English</span></li>
+                    <li><span class="label">Currency:</span> <span class="value">US Dollar</span></li>
+                    <li><span class="label">Time Zone:</span> <span class="value">UTC-4 to -10</span></li>
+                    <li><span class="label">Calling Code:</span> <span class="value">+1</span></li>
+                    <li><span class="label">Internet TLD:</span> <span class="value">.us</span></li>
+                </ul>
+            </section>
+
+            <section class="container weather-card">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="Weather Icon" class="mobile-weather-icon">
+                <ul class="info-list">
+                    <li><span class="label">Temperature:</span> <span class="value"><span id="temp">45</span> °F</span></li>
+                    <li><span class="label">Conditions:</span> <span class="value">Partly Cloudy</span></li>
+                    <li><span class="label">Wind:</span> <span class="value"><span id="wind">10</span> mph</span></li>
+                    <li><span class="label">Wind Chill:</span> <span class="value" id="chill"></span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> 🗽 Priscilla Gyasiwaa Sarpong 🗽 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
