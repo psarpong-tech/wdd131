@@ -1,6 +1,6 @@
 :root {
   --primary-color: #0a3161;
-  --secondary-color: #b31942;
+  --secondary-color: #8b0a2a;
   --accent-color: #12529c;
   --text-color: #222;
   --card-bg: rgba(255, 255, 255, 0.92);
@@ -121,7 +121,7 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 1rem;
-  font-weight: 700;
+  
 }
 
 footer p {
