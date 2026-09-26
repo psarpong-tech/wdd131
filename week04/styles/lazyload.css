@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background: #000;
+    animation: fade 15s;
+}
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	padding: 0.5rem 0;
+    text-align: center;
+    background-color: white;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
