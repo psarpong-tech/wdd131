@@ -111,7 +111,7 @@ const temples = [
   "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/apia-samoa/400x250/apia-samoa-temple-lds-460475-wallpaper.jpg"
   },
   {
-  templeName: "Antofagasta Chile Temple",
+  templeName: "Antofagasta Chile",
   location: "Antofagasta, Chile",
   dedicated: "2025, June, 15",
   area: 26163,
