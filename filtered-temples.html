@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album</title>
+
+    <meta name="description" content="A responsive temple album featuring temples from different locations.">
+    <meta name="author" content="Priscilla Gyasiwaa Sarpong">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="page-title">Temple Album</div>
+
+            <button id="menu" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Temples</h1>
+        <div class="filter-temples"></div>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> 🌴 Priscilla Gyasiwaa Sarpong 🌴 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
