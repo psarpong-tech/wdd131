@@ -80,28 +80,45 @@ const temples = [
   },
   {
   templeName: "Atlanta Georgia",
-  location: "Atlanta, Georgia",
-  dedicated: "1983, June, 2",
+  location: "Sandy Springs, Georgia, United States",
+  dedicated: "1983, June, 1",
   area: 34500,
   imageUrl:
-  "https://churchofjesuschristtemples.org/assets/img/temples/atlanta-georgia-temple/atlanta-georgia-temple-13940-main.jpg"
-},
-{
-  templeName: "Abidjan Ivory Coast",
-  location: "Abidjan, Ivory Coast",
-  dedicated: "2025, May, 25",
-  area: 17362,
+  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/atlanta-georgia/400x250/atlanta-temple-lds-811746-wallpaper.jpg"
+  },
+  {
+  templeName: "Houston Texas",
+  location: "Spring, Texas, United States",
+  dedicated: "2000, August, 26",
+  area: 33970,
   imageUrl:
-  "https://churchofjesuschristtemples.org/assets/img/temples/abidjan-ivory-coast-temple/abidjan-ivory-coast-temple-58993-main.jpg"
-},
-{
+  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/houston-texas/2018/400x250/houston-temple04.jpg"
+  },
+  {
   templeName: "Accra Ghana",
-  location: "Accra, Ghana",
+  location: "Accra, Greater Accra, Ghana",
   dedicated: "2004, January, 11",
   area: 17500,
   imageUrl:
-  "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg"
-}
+  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x225/accra-ghana-temple-detail-249022-2400x1200.jpg"
+  },
+  {
+  templeName: "Apia Samoa",
+  location: "Apia, Pesega, Samoa",
+  dedicated: "1983, August, 5",
+  area: 18691,
+  imageUrl:
+  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/apia-samoa/400x250/apia-samoa-temple-lds-460475-wallpaper.jpg"
+  },
+  {
+  templeName: "Antofagasta Chile Temple",
+  location: "Antofagasta, Chile",
+  dedicated: "2025, June, 15",
+  area: 26163,
+  imageUrl:
+  
+  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x225/accra-ghana-temple-detail-249022-2400x1200.jpg"
+  }
 ];
 
 const templesContainer = document.querySelector(".filter-temples");
