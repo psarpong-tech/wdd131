@@ -36,3 +36,6 @@ products.forEach(product => {
 
     productSelect.appendChild(option);
 })
+
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent += ` ${document.lastModified}`;
