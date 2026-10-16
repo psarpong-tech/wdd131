@@ -33,29 +33,41 @@ function updateFooter() {
   }
 }
 
+
+
 function setupNavigation() {
-  const menuButton = document.querySelector(".menu-toggle");
-  const navigation = document.querySelector("#primary-navigation");
+    const menuButton = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector("#primary-navigation");
 
-  if (!menuButton || !navigation) return;
+    if (!menuButton || !navigation) {
+        return;
+    }
 
-  menuButton.addEventListener("click", () => {
-    const menuIsOpen = navigation.classList.toggle("open");
-    menuButton.setAttribute("aria-expanded", `${menuIsOpen}`);
-    menuButton.setAttribute(
-      "aria-label",
-      menuIsOpen ? `Close navigation menu` : `Open navigation menu`
-    );
-  });
-
-  navigation.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navigation.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
-      menuButton.setAttribute("aria-label", `Open navigation menu`);
+    menuButton.addEventListener("click", () => {
+        if (navigation.classList.contains("open")) {
+            navigation.classList.remove("open");
+            menuButton.textContent = "☰";
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Open navigation menu");
+        } else {
+            navigation.classList.add("open");
+            menuButton.textContent = "✕";
+            menuButton.setAttribute("aria-expanded", "true");
+            menuButton.setAttribute("aria-label", "Close navigation menu");
+        }
     });
-  });
+
+    navigation.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            navigation.classList.remove("open");
+            menuButton.textContent = "☰";
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Open navigation menu");
+        });
+    });
 }
+
+
 
 function setupInterestPreference() {
   const interestSelect = document.querySelector("#interest-area");
